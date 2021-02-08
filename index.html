@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App☀️Wire Frame</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/49b63f8fff.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <!--Steps: 
+				Set up project folder, add src folder with styles.css and add html to project folder.
+				Added link to css: <link rel="stylesheet" href="src/styles.css" /> in HTML doc
+				Added Bootstrap link to HTML doc
+				Added <div class="container"> in body of HTML doc
+				Test html, css stylesheet (add color to style sheet) & Bootstrap (below) to make sure it's page working
+     		 <h1>Hello World</h1>
+					<a class="btn btn-success">Click me</a>
+				Reviewed sample Google weather app and analyzed to see what is needed:
+				Current Weather <h1>
+        Paris, France <h2>
+        Date/time: <ul/li> or <p>. Has same styling as date/time.
+        Image, temperature-large font, degrees: c & f subscript and f is a link 
+        Precipitation, Humidity & Wind could be a <ul/li> or <p> has same styling as date/time.
+        Border encompasses full app
+        Add a search tool
+
+        Create HTML
+			-->
+    <div class="container">
+      <div class="weather-app">
+        <h1>Current Weather</h1>
+        <h2>Paris, France</h2>
+        <ul>
+          <li>Monday, 5:00 am</li>
+          <li>Showers</li>
+        </ul>
+        <div class="row">
+          <div class="col-7.5">
+            <div class="clearfix">
+              <i
+                class="fas fa-cloud-showers-heavy heavy-rain-icon1"
+                alt="Showers icon"
+              ></i>
+              <span class="temperature float-left"> 49</span>
+              <span class="degree-sign float-left"
+                >°C | <a href="#">°F </a></span
+              >
+            </div>
+          </div>
+          <div class="col-4.5">
+            <ul>
+              <li>Precipitation: 3%</li>
+              <li>Humidity: 73%</li>
+              <li>Wind: 6 km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row row-searchbox">
+          <form>
+            <input type="text" placeholder="Enter your city" autofocus />
+            <input type="submit" value="Search" class="search-btn" />
+          </form>
+        </div>
+        <div class="row seven-day">
+          <div class="col-auto ext-forecast">
+            <p class="border-list">
+              Mon <br />
+              <i class="fas fa-cloud-showers-heavy heavy-rain-icon"></i><br />
+              <span class="high-temp">55°</span> 46°
+            </p>
+          </div>
+          <div class="col-auto ext-forecast">
+            <p class="border-list">
+              Tue <br />
+              <i class="fas fa-cloud-rain rain-icon"></i> <br />
+              <span class="high-temp">58°</span> 52°
+            </p>
+          </div>
+
+          <div class="col-auto ext-forecast">
+            <p class="border-list">
+              Wed <br />
+              <i class="fas fa-cloud-showers-heavy heavy-rain-icon"></i><br />
+              <span class="high-temp">55°</span> 46°
+            </p>
+          </div>
+          <div class="col-auto ext-forecast">
+            <p class="border-list">
+              Thu <br />
+              <i class="fas fa-cloud-sun sun-icon"></i> <br />
+              <span class="high-temp">56°</span> 46°
+            </p>
+          </div>
+          <div class="col-auto ext-forecast">
+            <p class="border-list">
+              Fri <br />
+              <i class="fas fa-cloud-rain rain-icon"></i> <br />
+              <span class="high-temp">53°</span> 44°
+            </p>
+          </div>
+          <div class="col-auto ext-forecast">
+            <p class="border-list">
+              Sat <br />
+              <i class="fas fa-cloud-rain rain-icon"></i> <br />
+              <span class="high-temp">47°</span> 39°
+            </p>
+          </div>
+          <div class="col-auto ext-forecast">
+            <p class="border-list">
+              Sun <br />
+              <i class="fas fa-cloud-rain rain-icon"></i>
+              <br />
+              <span class="high-temp">42°</span> 33°
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
